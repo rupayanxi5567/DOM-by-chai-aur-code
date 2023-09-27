@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM by chai aur code</title>
+
+    <style>
+
+        body{
+            background-color: black;
+            color: white;
+        }
+        
+        </style>
+
+</head>
+<body>
+
+    
+
+    
+</body>
+
+<script>
+
+const divs = document.createElement("div")
+console.log(divs)
+
+divs.className = "myDiv"
+divs.id = Math.round( Math.random()*10 + 1 )
+divs.setAttribute("title", "it's heading")
+divs.style.backgroundColor = "green"
+divs.style.padding = "15px"
+// divs.innerText = "foty bby"
+
+const text = document.createTextNode("foty bby")
+divs.appendChild(text)
+document.body.appendChild(divs)
+
+</script>
+
+</html>
