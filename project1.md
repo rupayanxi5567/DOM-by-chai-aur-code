@@ -1,3 +1,4 @@
+```
 HTML codes
 
 <!DOCTYPE html>
@@ -45,8 +46,9 @@ HTML codes
     <script src="chaiaurcode.js"></script>
   </body>
 </html>
+```
 
-
+```
 CSS codes
 
 html {
@@ -90,6 +92,7 @@ span {
 #brown {
   background: brown;
 }
+```
 
 ```
 JS codes
