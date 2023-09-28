@@ -13,7 +13,7 @@ HTML codes
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
+      <a target="_blank" href="#"
         >Youtube channel</a
       >
     </nav>
@@ -35,9 +35,7 @@ HTML codes
       <span class="btn" id="white"></span>
       <span class="btn" id="blue"></span>
       <span class="btn" id="yellow"></span>
-
       <span class="btn" id="lime"></span>
-
       <span class="btn" id="brown"></span>
       <h2>
         Try clicking on one of the colors above
@@ -102,48 +100,29 @@ const bodys = document.querySelector("body")
 
 buttons.forEach( function (butt) {
 
-    console.log(butt)
+   console.log(butt)
 
-    butt.addEventListener("click", function(e) {
-
-        console.log(e)
+  butt.addEventListener("click", function(e) {
+      console.log(e)
         console.log(e.target)
         if (e.target.id === "grey") {
-
-            bodys.style.backgroundColor = e.target.id
-            
+         bodys.style.backgroundColor = e.target.id
         }
-
         if (e.target.id === "white") {
-
             bodys.style.backgroundColor = e.target.id
-            
         }
-
         if (e.target.id === "blue") {
-
             bodys.style.backgroundColor = e.target.id
-            
         }
-
         if (e.target.id === "yellow") {
-
-            bodys.style.backgroundColor = e.target.id
-            
+            bodys.style.backgroundColor = e.target.id         
         }
-
         if (e.target.id === "lime") {
-
-            bodys.style.backgroundColor = e.target.id
-            
+            bodys.style.backgroundColor = e.target.id        
         }
-
-        if (e.target.id === "brown") {
-
-            bodys.style.backgroundColor = e.target.id
-            
+      if (e.target.id === "brown") {
+            bodys.style.backgroundColor = e.target.id       
         }
-
     } )
     
 } )
