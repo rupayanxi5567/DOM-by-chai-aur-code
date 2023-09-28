@@ -91,7 +91,7 @@ span {
   background: brown;
 }
 
-
+```
 JS codes
 
 const buttons = document.querySelectorAll(".btn")
@@ -126,3 +126,5 @@ buttons.forEach( function (butt) {
     } )
     
 } )
+
+```
