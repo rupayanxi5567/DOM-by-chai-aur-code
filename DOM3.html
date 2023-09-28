@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foty and Code</title>
+
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+    <ul class="languages">
+        <li>JS</li>
+        <li>PY</li>
+    </ul>
+    
+</body>
+
+<script>
+
+function addLang(lang) {
+
+    const lis = document.createElement("li")
+
+    lis.innerHTML = `${lang}`
+    document.querySelector(".languages").appendChild(lis)
+}
+
+addLang("java")
+addLang("C++")
+
+// This is an optimized approach of the previous one
+
+function addOptLang(langu) {
+
+    const lis = document.createElement("li")
+    
+    lis.appendChild(document.createTextNode( langu ) )
+
+    document.querySelector(".languages").appendChild(lis)
+    
+}
+
+addOptLang("GoLang")
+addOptLang("PHP")
+
+// This is the end of the optimized approach of the previous one
+
+
+
+// how to edit elements in DOM [optimized] - 1
+
+const thirdLang = document.querySelector("li:nth-child(3)")
+
+const newLi = document.createElement("li")
+
+newLi.textContent = "C"
+
+thirdLang.replaceWith(newLi)
+
+// how to edit elements in DOM [optimized and easy] - 2 
+
+const firstLang = document.querySelector("li:first-child");
+
+firstLang.outerHTML = " <li> TypeScript </li>"; 
+
+
+
+
+// how to remove elements in DOM [optimized] - 1
+
+const removing = document.querySelector("li:last-child");
+
+removing.remove()
+</script>
+
+</html>
