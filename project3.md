@@ -1,3 +1,4 @@
+```
 HTML codes
 
 <!DOCTYPE html>
@@ -43,8 +44,9 @@ HTML codes
     <script src="chaiaurcode.js"></script>
   </body>
 </html>
+```
 
-
+```
 JS codes
 
 const clocks = document.getElementById("clock")
@@ -54,4 +56,6 @@ setInterval(function(){
     // console.log(dates.toLocaleDateString () )
     clocks.innerHTML = dates.toLocaleTimeString()
 }, 1000)
+
+```
 
