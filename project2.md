@@ -1,3 +1,4 @@
+```
 HTML codes
 
 <!DOCTYPE html>
@@ -36,8 +37,9 @@ HTML codes
   </body>
   <script src="chaiaurcode.js"></script>
 </html>
+```
 
-
+```
 CSS codes
 
 body{
@@ -51,7 +53,9 @@ body{
     font-weight: bold;
     
 }
+```
 
+```
 JS codes
 
 const forms = document.querySelector("form")
@@ -120,3 +124,4 @@ else if ( BMI> 24.9 ){
   
 
 } )
+```
